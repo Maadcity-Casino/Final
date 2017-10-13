@@ -26,7 +26,7 @@ public class Menu {
 		}
 		if("quit".equalsIgnoreCase(user)) {
 			
-		} 
+		}  
 		}while ("Coin flip".equalsIgnoreCase(user)||"Rock paper Scissors".equalsIgnoreCase(user)||"Guess".equalsIgnoreCase(user)||"Bingo".equalsIgnoreCase(user)||"Black Jack".equalsIgnoreCase(user) );
 	}
 }
