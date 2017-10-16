@@ -6,6 +6,7 @@ public class RockPaperScissors {
 		// TODO Auto-generated method stub
 		
 		String user;
+		int score = 0;
 		int math;
 		Random rand = new Random();
 		int  n = rand.nextInt(3) + 1;
@@ -22,11 +23,13 @@ public class RockPaperScissors {
 				}
 			if (n == 3) {
 				 JOptionPane.showMessageDialog(null,"You picked rock. You win!");
+				 ++score;
 				}
 		}
 		if(math == 2) {
 			if (n == 1) {
 			 JOptionPane.showMessageDialog(null,"You picked paper. You win!");
+			 ++score;
 			}
 			if (n == 2) {
 				 JOptionPane.showMessageDialog(null,"You picked paper. Its a tie");
@@ -41,6 +44,7 @@ public class RockPaperScissors {
 			}
 			if (n == 2) {
 				 JOptionPane.showMessageDialog(null,"You picked scissors. You win");
+				 ++score;
 				}
 			if (n == 3) {
 				 JOptionPane.showMessageDialog(null,"You picked scissors. Its a tie");
