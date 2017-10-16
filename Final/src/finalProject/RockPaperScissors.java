@@ -8,6 +8,8 @@ public class RockPaperScissors {
 		String user;
 		int score = 0;
 		int math;
+		String play;
+		do {
 		Random rand = new Random();
 		int  n = rand.nextInt(3) + 1;
 		user = JOptionPane.showInputDialog(null,
@@ -51,5 +53,7 @@ public class RockPaperScissors {
 				}
 		}
 		
-		}
+		play = JOptionPane.showInputDialog(null, "Do you want to play again?");
+		}while ("yes".equalsIgnoreCase(play));
+}
 }

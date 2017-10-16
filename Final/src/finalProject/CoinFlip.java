@@ -6,6 +6,8 @@ public class CoinFlip {
 		// TODO Auto-generated method stub
 		String user;
 		int score = 0;
+		String play;
+		do {
 		Random rand = new Random();
 		int n = rand.nextInt(2) + 1;
 		user = JOptionPane.showInputDialog(null,"Heads or tails");
@@ -29,5 +31,7 @@ public class CoinFlip {
 			//Guess.main(args);	
 			}
 		}	
-		}
+		play = JOptionPane.showInputDialog(null, "Do you want to play again?");
+		}while ("yes".equalsIgnoreCase(play));
+}
 }

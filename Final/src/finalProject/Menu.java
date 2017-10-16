@@ -18,9 +18,9 @@ public class Menu {
 		if("guess".equalsIgnoreCase(user)) {
 			Guess.main(args);
 		}
-		//if("Bingo".equalsIgnoreCase(user)) {
-		//	Bingo.main(args);
-		//}
+		if("Bingo".equalsIgnoreCase(user)) {
+			Bingo.main(args);
+		}
 		if("Black Jack".equalsIgnoreCase(user)) {
 			BlackJack.main(args);
 		}

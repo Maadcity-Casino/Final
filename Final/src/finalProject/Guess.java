@@ -7,6 +7,8 @@ public class Guess {
 		// Ask user to pick how many numbers are in range
 		String user;
 		int score = 0;
+		String play;
+		do {
 		user = JOptionPane.showInputDialog(null,
 				"Pick a range to guess from\n1 - 1-2\n2 - 1-5"
 				+ "\n3 - 1-8\n4 1-10");
@@ -697,5 +699,7 @@ public class Guess {
 				}
 			}
 		}
+			play = JOptionPane.showInputDialog(null, "Do you want to play again?");
+		}while ("yes".equalsIgnoreCase(play));
 	}
 }
