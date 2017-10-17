@@ -5,7 +5,9 @@ public class Menu {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String user;
+		String name;
 		do {
+			name = JOptionPane.showInputDialog(null,
 		user = JOptionPane.showInputDialog(null,
 				"What game would you like to play?\n1 - Coin flip\n2 - Rock Paper Scissors"
 				+ "\n3 - Guess\n4 - Bingo\n5 - Black Jack\n6 - Quit");

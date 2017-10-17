@@ -41,7 +41,7 @@ int dealer; //total dealer
 				
 				total = (madi + madi2 + madi3);
 				JOptionPane.showMessageDialog(null, total);
-				if (total >21 || total < dealer) {
+				if (total >21) {
 					JOptionPane.showMessageDialog(null, "You lose dealer beat you.");
 				}
 				if (total == 21) {
@@ -61,6 +61,7 @@ int dealer; //total dealer
 				
 			}
 			if("stand".equalsIgnoreCase(draw)) {
+				total = madi + madi2;
 				if (total > dealer) {
 					JOptionPane.showMessageDialog(null, "You win!");
 				}
@@ -69,6 +70,7 @@ int dealer; //total dealer
 				}
 			}
 			if("stand".equalsIgnoreCase(user)) {
+				total = madi + madi2 + madi3;
 				if (total > dealer) {
 					JOptionPane.showMessageDialog(null, "You win!");
 				}
