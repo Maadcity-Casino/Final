@@ -14,19 +14,19 @@ int dealer; //total dealer
 	do {
 			
 			Random rand = new Random();
-			int madi = rand.nextInt(13) + 1;
+			int madi = rand.nextInt(11) + 1;
 			Random rand2 = new Random();
-			int madi2 = rand2.nextInt(13) + 1;
+			int madi2 = rand2.nextInt(11) + 1;
 			Random rand3 = new Random();
-			int madi3 = rand3.nextInt(13) + 1;
+			int madi3 = rand3.nextInt(11) + 1;
 			Random rand4 = new Random();
-			int madi4 = rand4.nextInt(13) + 1;
+			int madi4 = rand4.nextInt(11) + 1;
 			Random comp = new Random();
-			int deal = comp.nextInt(13) + 1;
+			int deal = comp.nextInt(11) + 1;
 			Random comp2 = new Random();
-			int deal2 = comp2.nextInt(13) + 1;
+			int deal2 = comp2.nextInt(11) + 1;
 			Random comp3 = new Random();
-			int deal3 = comp3.nextInt(13) + 1;
+			int deal3 = comp3.nextInt(11) + 1;
 			dealer = deal + deal2;
 			if (dealer <= 16) {
 				dealer = (deal + deal2 + deal3);
