@@ -10,7 +10,7 @@ public class Menu {
 			name = JOptionPane.showInputDialog(null, "Enter username");
 		user = JOptionPane.showInputDialog(null,
 				"What game would you like to play?\n1 - Coin flip\n2 - Rock Paper Scissors"
-				+ "\n3 - Guess\n4 - Bingo\n5 - Black Jack\n6 - Quit");
+				+ "\n3 - Guess\n4 - Bingo\n5 - Black Jack\n6 - see an array\n7 - Quit");
 		if("Coin flip".equalsIgnoreCase(user)) {
 			CoinFlip.main(args);
 	}
@@ -25,6 +25,9 @@ public class Menu {
 		}
 		if("Black Jack".equalsIgnoreCase(user)) {
 			BlackJack.main(args);
+		}
+		if("Array".equalsIgnoreCase(user)) {
+			Array.main(args);
 		}
 		if("quit".equalsIgnoreCase(user)) {
 			
