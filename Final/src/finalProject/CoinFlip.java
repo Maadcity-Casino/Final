@@ -5,6 +5,9 @@ public class CoinFlip {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String user;
+		int score = 0;
+		String play;
+		do {
 		Random rand = new Random();
 		int n = rand.nextInt(2) + 1;
 		user = JOptionPane.showInputDialog(null,"Heads or tails");
@@ -12,6 +15,7 @@ public class CoinFlip {
 		if(n == 1) {
 			if("Heads".equalsIgnoreCase(user)) {
 				JOptionPane.showMessageDialog(null,"You picked Heads. You win");
+				++score;
 		}
 			if("Tails".equalsIgnoreCase(user)) {
 				JOptionPane.showMessageDialog(null,"You picked Tails. You lose");
@@ -23,8 +27,11 @@ public class CoinFlip {
 			}
 			if("Tails".equalsIgnoreCase(user)) {
 				JOptionPane.showMessageDialog(null,"You picked Tails. You win");
+				++score;
 			//Guess.main(args);	
 			}
 		}	
-		}
+		play = JOptionPane.showInputDialog(null, "Do you want to play again? Your score is " + score);
+		}while ("yes".equalsIgnoreCase(play));
+}
 }

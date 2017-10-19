@@ -6,6 +6,9 @@ public class Guess {
 		// TODO Auto-generated method stub
 		// Ask user to pick how many numbers are in range
 		String user;
+		int score = 0;
+		String play;
+		do {
 		user = JOptionPane.showInputDialog(null,
 				"Pick a range to guess from\n1 - 1-2\n2 - 1-5"
 				+ "\n3 - 1-8\n4 1-10");
@@ -14,11 +17,12 @@ public class Guess {
 			int first = rand.nextInt(2) + 1;
 			String pick;
 			int real;
-			pick = JOptionPane.showInputDialog(null,"please pick a number 1-2");
+			pick = JOptionPane.showInputDialog(null,"Please pick a number 1-2");
 			real = Integer.parseInt(pick);
 			if(first == 1) {
 				if(real == 1) {
 					JOptionPane.showMessageDialog(null,"You picked 1. You win");
+					++score;
 				}
 				if(real == 2) {
 					JOptionPane.showMessageDialog(null,"You picked 2. You lose");
@@ -30,6 +34,7 @@ public class Guess {
 				}
 				if(real == 2) {
 					JOptionPane.showMessageDialog(null,"You picked 2. You win");
+					++score;
 				}
 			}
 		}
@@ -43,6 +48,7 @@ public class Guess {
 			if(second == 1) {
 				if(real == 1) {
 					JOptionPane.showMessageDialog(null,"You picked 1. You win");
+					++score;
 				}
 				if(real == 2) {
 					JOptionPane.showMessageDialog(null,"You picked 2. You lose");
@@ -63,6 +69,7 @@ public class Guess {
 				}
 				if(real == 2) {
 					JOptionPane.showMessageDialog(null,"You picked 2. You win");
+					++score;
 				}
 				if(real == 3) {
 				JOptionPane.showMessageDialog(null,"You picked 3. You lose");
@@ -83,6 +90,7 @@ public class Guess {
 				}
 				if(real == 3) {
 				JOptionPane.showMessageDialog(null,"You picked 3. You win");
+				++score;
 				}
 				if(real == 4) {
 				JOptionPane.showMessageDialog(null,"You picked 4. You lose");
@@ -103,6 +111,7 @@ public class Guess {
 				}
 				if(real == 4) {
 				JOptionPane.showMessageDialog(null,"You picked 4. You win");
+				++score;
 				}
 				if(real == 5) {
 				JOptionPane.showMessageDialog(null,"You picked 5. You lose");
@@ -123,6 +132,7 @@ public class Guess {
 				}
 				if(real == 5) {
 				JOptionPane.showMessageDialog(null,"You picked 5. You win");
+				++score;
 				}
 			}
 		}
@@ -136,6 +146,7 @@ public class Guess {
 			if(third == 1) {
 				if(real == 1) {
 					JOptionPane.showMessageDialog(null,"You picked 1. You win");
+					++score;
 				}
 				if(real == 2) {
 					JOptionPane.showMessageDialog(null,"You picked 2. You lose");
@@ -165,6 +176,7 @@ public class Guess {
 				}
 				if(real == 2) {
 					JOptionPane.showMessageDialog(null,"You picked 2. You win");
+					++score;
 				}
 				if(real == 3) {
 				JOptionPane.showMessageDialog(null,"You picked 3. You lose");
@@ -194,6 +206,7 @@ public class Guess {
 				}
 				if(real == 3) {
 				JOptionPane.showMessageDialog(null,"You picked 3. You win");
+				++score;
 				}
 				if(real == 4) {
 				JOptionPane.showMessageDialog(null,"You picked 4. You lose");
@@ -223,6 +236,7 @@ public class Guess {
 				}
 				if(real == 4) {
 				JOptionPane.showMessageDialog(null,"You picked 4. You win");
+				++score;
 				}
 				if(real == 5) {
 				JOptionPane.showMessageDialog(null,"You picked 5. You lose");
@@ -252,6 +266,7 @@ public class Guess {
 				}
 				if(real == 5) {
 				JOptionPane.showMessageDialog(null,"You picked 5. You win");
+				++score;
 				}
 				if(real == 6) {
 					JOptionPane.showMessageDialog(null,"You picked 6. You lose");
@@ -281,6 +296,7 @@ public class Guess {
 				}
 				if(real == 6) {
 					JOptionPane.showMessageDialog(null,"You picked 6. You win");
+					++score;
 				}
 				if(real == 7) {
 					JOptionPane.showMessageDialog(null,"You picked 7. You lose");
@@ -310,6 +326,7 @@ public class Guess {
 				}
 				if(real == 7) {
 					JOptionPane.showMessageDialog(null,"You picked 7. You win");
+					++score;
 				}
 				if(real == 8) {
 					JOptionPane.showMessageDialog(null,"You picked 8. You lose");
@@ -339,6 +356,7 @@ public class Guess {
 				}
 				if(real == 8) {
 					JOptionPane.showMessageDialog(null,"You picked 8. You win");
+					++score;
 				}
 			}
 		}
@@ -352,6 +370,7 @@ public class Guess {
 			if(four == 1) {
 				if(real == 1) {
 					JOptionPane.showMessageDialog(null,"You picked 1. You win");
+					++score;
 				}
 				if(real == 2) {
 					JOptionPane.showMessageDialog(null,"You picked 2. You lose");
@@ -387,6 +406,7 @@ public class Guess {
 				}
 				if(real == 2) {
 					JOptionPane.showMessageDialog(null,"You picked 2. You win");
+					++score;
 				}
 				if(real == 3) {
 				JOptionPane.showMessageDialog(null,"You picked 3. You lose");
@@ -422,6 +442,7 @@ public class Guess {
 				}
 				if(real == 3) {
 				JOptionPane.showMessageDialog(null,"You picked 3. You win");
+				++score;
 				}
 				if(real == 4) {
 				JOptionPane.showMessageDialog(null,"You picked 4. You lose");
@@ -457,6 +478,7 @@ public class Guess {
 				}
 				if(real == 4) {
 				JOptionPane.showMessageDialog(null,"You picked 4. You win");
+				++score;
 				}
 				if(real == 5) {
 				JOptionPane.showMessageDialog(null,"You picked 5. You lose");
@@ -492,6 +514,7 @@ public class Guess {
 				}
 				if(real == 5) {
 				JOptionPane.showMessageDialog(null,"You picked 5. You win");
+				++score;
 				}
 				if(real == 6) {
 					JOptionPane.showMessageDialog(null,"You picked 6. You lose");
@@ -527,6 +550,7 @@ public class Guess {
 				}
 				if(real == 6) {
 					JOptionPane.showMessageDialog(null,"You picked 6. You win");
+					++score;
 				}
 				if(real == 7) {
 					JOptionPane.showMessageDialog(null,"You picked 7. You lose");
@@ -562,6 +586,7 @@ public class Guess {
 				}
 				if(real == 7) {
 					JOptionPane.showMessageDialog(null,"You picked 7. You win");
+					++score;
 				}
 				if(real == 8) {
 					JOptionPane.showMessageDialog(null,"You picked 8. You lose");
@@ -597,6 +622,7 @@ public class Guess {
 				}
 				if(real == 8) {
 					JOptionPane.showMessageDialog(null,"You picked 8. You win");
+					++score;
 				}
 				if(real == 9) {
 					JOptionPane.showMessageDialog(null,"You picked 9. You lose");
@@ -605,6 +631,75 @@ public class Guess {
 					JOptionPane.showMessageDialog(null,"You picked 10. You lose");
 				}
 			}
+			if(four == 9) {
+				if(real == 1) {
+					JOptionPane.showMessageDialog(null,"You picked 1. You lose");
+				}
+				if(real == 2) {
+					JOptionPane.showMessageDialog(null,"You picked 2. You lose");
+				}
+				if(real == 3) {
+				JOptionPane.showMessageDialog(null,"You picked 3. You lose");
+				}
+				if(real == 4) {
+				JOptionPane.showMessageDialog(null,"You picked 4. You lose");
+				}
+				if(real == 5) {
+				JOptionPane.showMessageDialog(null,"You picked 5. You lose");
+				}
+				if(real == 6) {
+					JOptionPane.showMessageDialog(null,"You picked 6. You lose");
+				}
+				if(real == 7) {
+					JOptionPane.showMessageDialog(null,"You picked 7. You lose");
+				}
+				if(real == 8) {
+					JOptionPane.showMessageDialog(null,"You picked 8. You lose");
+					
+				}
+				if(real == 9) {
+					JOptionPane.showMessageDialog(null,"You picked 9. You win");
+					++score;
+				}
+				if(real == 10) {
+					JOptionPane.showMessageDialog(null,"You picked 10. You lose");
+				}
+			}
+			if(four == 10) {
+				if(real == 1) {
+					JOptionPane.showMessageDialog(null,"You picked 1. You lose");
+				}
+				if(real == 2) {
+					JOptionPane.showMessageDialog(null,"You picked 2. You lose");
+				}
+				if(real == 3) {
+				JOptionPane.showMessageDialog(null,"You picked 3. You lose");
+				}
+				if(real == 4) {
+				JOptionPane.showMessageDialog(null,"You picked 4. You lose");
+				}
+				if(real == 5) {
+				JOptionPane.showMessageDialog(null,"You picked 5. You lose");
+				}
+				if(real == 6) {
+					JOptionPane.showMessageDialog(null,"You picked 6. You lose");
+				}
+				if(real == 7) {
+					JOptionPane.showMessageDialog(null,"You picked 7. You lose");
+				}
+				if(real == 8) {
+					JOptionPane.showMessageDialog(null,"You picked 8. You lose");
+				}
+				if(real == 9) {
+					JOptionPane.showMessageDialog(null,"You picked 9. You lose");
+				}
+				if(real == 10) {
+					JOptionPane.showMessageDialog(null,"You picked 10. You win");
+					++score;
+				}
+			}
 		}
+			play = JOptionPane.showInputDialog(null, "Do you want to play again? Your score is " + score);
+		}while ("yes".equalsIgnoreCase(play));
 	}
 }

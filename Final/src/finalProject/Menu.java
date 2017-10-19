@@ -5,7 +5,9 @@ public class Menu {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String user;
+		String name;
 		do {
+			name = JOptionPane.showInputDialog(null, "Enter username");
 		user = JOptionPane.showInputDialog(null,
 				"What game would you like to play?\n1 - Coin flip\n2 - Rock Paper Scissors"
 				+ "\n3 - Guess\n4 - Bingo\n5 - Black Jack\n6 - Quit");
@@ -18,15 +20,15 @@ public class Menu {
 		if("guess".equalsIgnoreCase(user)) {
 			Guess.main(args);
 		}
-		//if("Bingo".equalsIgnoreCase(user)) {
-		//	Bingo.main(args);
-		//}
+		if("Bingo".equalsIgnoreCase(user)) {
+			Bingo.main(args);
+		}
 		if("Black Jack".equalsIgnoreCase(user)) {
 			BlackJack.main(args);
 		}
 		if("quit".equalsIgnoreCase(user)) {
 			
-		}
+		}  
 		}while ("Coin flip".equalsIgnoreCase(user)||"Rock paper Scissors".equalsIgnoreCase(user)||"Guess".equalsIgnoreCase(user)||"Bingo".equalsIgnoreCase(user)||"Black Jack".equalsIgnoreCase(user) );
 	}
 }
