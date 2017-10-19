@@ -15,8 +15,8 @@ public class RockPaperScissors {
 		user = JOptionPane.showInputDialog(null,
 				"Pick one please\n1 - Rock\n2 - Paper"
 				+ "\n3 - Scissors");
-		math = Integer.parseInt(user);
-		if(math == 1) {
+		
+		if("rock".equalsIgnoreCase(user)) {
 			if (n == 1) {
 			 JOptionPane.showMessageDialog(null,"You picked rock. Its a tie");
 			}
@@ -25,10 +25,10 @@ public class RockPaperScissors {
 				}
 			if (n == 3) {
 				 JOptionPane.showMessageDialog(null,"You picked rock. You win!");
-				 ++score;
+				 score ++;
 				}
 		}
-		if(math == 2) {
+		if("paper".equalsIgnoreCase(user)) {
 			if (n == 1) {
 			 JOptionPane.showMessageDialog(null,"You picked paper. You win!");
 			 ++score;
@@ -40,7 +40,7 @@ public class RockPaperScissors {
 				 JOptionPane.showMessageDialog(null,"You picked paper. You lose!");
 				}
 		}
-		if(math == 3) {
+		if("scissors".equalsIgnoreCase(user)) {
 			if (n == 1) {
 			 JOptionPane.showMessageDialog(null,"You picked scissors. You lose");
 			}
@@ -53,7 +53,7 @@ public class RockPaperScissors {
 				}
 		}
 		
-		play = JOptionPane.showInputDialog(null, "Do you want to play again?");
+		play = JOptionPane.showInputDialog(null, "Do you want to play again? Your score is "+ score);
 		}while ("yes".equalsIgnoreCase(play));
 }
 }

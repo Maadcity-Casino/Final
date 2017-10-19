@@ -9,8 +9,10 @@ public static void main(String[]args) {
 String user = null;
 String draw;
 String play;
+String user5 = null;
 int total; // user total
 int dealer; //total dealer
+int score = 0;
 	do {
 			
 			Random rand = new Random();
@@ -21,6 +23,8 @@ int dealer; //total dealer
 			int madi3 = rand3.nextInt(11) + 1;
 			Random rand4 = new Random();
 			int madi4 = rand4.nextInt(11) + 1;
+			Random rand5 = new Random();
+			int madi5 = rand5.nextInt(11) + 1;
 			Random comp = new Random();
 			int deal = comp.nextInt(11) + 1;
 			Random comp2 = new Random();
@@ -33,6 +37,7 @@ int dealer; //total dealer
 			
 				if (dealer > 21) {
 				JOptionPane.showMessageDialog(null, "Dealer bust, you win.");
+				++score;
 			}
 			}
 			
@@ -46,15 +51,28 @@ int dealer; //total dealer
 				}
 				if (total == 21) {
 					JOptionPane.showMessageDialog(null, "You win!");
+					++score;
 				}
 				if (total < 21) {
 					 user = JOptionPane.showInputDialog(null, madi + madi2 + madi3 + " \n1 - hit\n2 - Stand");
 					 if ("hit".equalsIgnoreCase(user)) {
 						 total = total + madi4;
 							JOptionPane.showMessageDialog(null, + total);
-							if (total > 21 || total < dealer) {
-								JOptionPane.showMessageDialog(null, "You lose");
+							if (total > 21) {
+								user5 = JOptionPane.showInputDialog(null, " \n1 - Hit\n2 - Stand");
 							}
+							if("hit".equalsIgnoreCase(user5)) {
+								total = total + madi5;
+								JOptionPane.showMessageDialog(null, total);
+							}
+								if (total > dealer && total < 22) {
+									JOptionPane.showMessageDialog(null, "You Win");
+								++ score;
+								}
+								if (total <= dealer || total > 21) {
+									JOptionPane.showMessageDialog(null, "You Lose");
+								}
+							
 					 
 					 }
 				}
@@ -64,6 +82,7 @@ int dealer; //total dealer
 				total = madi + madi2;
 				if (total > dealer) {
 					JOptionPane.showMessageDialog(null, "You win!");
+					score ++;
 				}
 				if (total < dealer) {
 					JOptionPane.showMessageDialog(null, "You lose");
@@ -73,6 +92,7 @@ int dealer; //total dealer
 				total = madi + madi2 + madi3;
 				if (total > dealer) {
 					JOptionPane.showMessageDialog(null, "You win!");
+					++score;
 				}
 				if (total < dealer) {
 					JOptionPane.showMessageDialog(null, "You lose");
@@ -80,7 +100,7 @@ int dealer; //total dealer
 			}
 		
 		
-		play = JOptionPane.showInputDialog(null, "Would you like to play again?");
+		play = JOptionPane.showInputDialog(null, "Your score is " + score + ". Would you like to play again?");
 	}while("yes".equalsIgnoreCase(play));	
 }
 }

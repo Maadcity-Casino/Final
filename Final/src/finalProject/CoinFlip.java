@@ -31,7 +31,7 @@ public class CoinFlip {
 			//Guess.main(args);	
 			}
 		}	
-		play = JOptionPane.showInputDialog(null, "Do you want to play again?");
+		play = JOptionPane.showInputDialog(null, "Do you want to play again? Your score is " + score);
 		}while ("yes".equalsIgnoreCase(play));
 }
 }

@@ -17,7 +17,7 @@ public class Guess {
 			int first = rand.nextInt(2) + 1;
 			String pick;
 			int real;
-			pick = JOptionPane.showInputDialog(null,"please pick a number 1-2");
+			pick = JOptionPane.showInputDialog(null,"Please pick a number 1-2");
 			real = Integer.parseInt(pick);
 			if(first == 1) {
 				if(real == 1) {
@@ -654,7 +654,7 @@ public class Guess {
 					JOptionPane.showMessageDialog(null,"You picked 7. You lose");
 				}
 				if(real == 8) {
-					JOptionPane.showMessageDialog(null,"You picked 8. You win");
+					JOptionPane.showMessageDialog(null,"You picked 8. You lose");
 					
 				}
 				if(real == 9) {
@@ -688,7 +688,7 @@ public class Guess {
 					JOptionPane.showMessageDialog(null,"You picked 7. You lose");
 				}
 				if(real == 8) {
-					JOptionPane.showMessageDialog(null,"You picked 8. You win");
+					JOptionPane.showMessageDialog(null,"You picked 8. You lose");
 				}
 				if(real == 9) {
 					JOptionPane.showMessageDialog(null,"You picked 9. You lose");
@@ -699,7 +699,7 @@ public class Guess {
 				}
 			}
 		}
-			play = JOptionPane.showInputDialog(null, "Do you want to play again?");
+			play = JOptionPane.showInputDialog(null, "Do you want to play again? Your score is " + score);
 		}while ("yes".equalsIgnoreCase(play));
 	}
 }

@@ -17,7 +17,7 @@ public class Bingo {
 		do {	 
 	
 		do {
-			   user = JOptionPane.showInputDialog(null, "Do you want more numbers? Yes or No.");
+			   user = JOptionPane.showInputDialog(null, "Say Yes to get a number. Say No to quit.");
 			   
 				if("yes".equalsIgnoreCase(user)) {
 					NumberGenerator(first);
