@@ -8,4 +8,4 @@ Youtube Link: www.youtube.com/watch?v=mT7_k6FQolc
 
 Google Site Link: https://sites.google.com/davenport.k12.ia.us/mdohrmund/home
 
-<img src="FlowChart.jpg height="20%" width="20%">
+<img src="FlowChart.jpg" height="20%" width="20%">
